@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.4 (2023-09-27)
+
+
+### :bug: Bug Fix
+
+* types node as dependency ([440624d](https://github.com/shepherd231/nx-plugins/commit/440624de3efcfae6d750c9a12ea684ce16941533))
+
+
+
 ## 0.0.3 (2023-09-27)
 
 **Note:** Version bump only for package @shepherd23/nx-preset-ts-monorepo
