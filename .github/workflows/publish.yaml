@@ -4,21 +4,12 @@ name: Publish packages
     branches:
       - master
 
-env:
-  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       # Checkout
       - uses: actions/checkout@v3
-
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '20.x'
-          registry-url: 'https://registry.npmjs.org'
 
       # Setup pnpm
       - uses: pnpm/action-setup@v2
@@ -39,3 +30,5 @@ jobs:
 
       # Publish packages
       - run: pnpm nx run-many -t publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
