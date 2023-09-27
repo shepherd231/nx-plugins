@@ -1,6 +1,7 @@
 {
   "name": "@shepherd23/nx-templates",
-  "version": "0.0.5",
+  "private": false,
+  "version": "0.0.6",
   "dependencies": {
     "@nx/devkit": "16.9.1",
     "tslib": "^2.3.0"
@@ -8,5 +9,8 @@
   "type": "commonjs",
   "main": "./src/index.js",
   "typings": "./src/index.d.ts",
-  "generators": "./generators.json"
+  "generators": "./generators.json",
+  "publishConfig": {
+    "access": "public"
+  }
 }
