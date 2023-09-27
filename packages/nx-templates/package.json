@@ -1,7 +1,12 @@
 {
   "name": "@shepherd23/nx-templates",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shepherd231/nx-plugins.git"
+  },
+  "homepage": "https://github.com/shepherd231/nx-plugins/tree/master/packages/nx-templates",
   "dependencies": {
     "@nx/devkit": "16.9.1",
     "tslib": "^2.3.0"
