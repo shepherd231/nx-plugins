@@ -1,6 +1,6 @@
 {
   "name": "@shepherd23/nx-templates",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "dependencies": {
     "@nx/devkit": "16.9.1",
     "tslib": "^2.3.0"
