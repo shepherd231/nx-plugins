@@ -37,8 +37,7 @@ if [ -z "$package_name" ]; then
 fi
 
 # Check if the package is already published
-published_version="0.0.1" # Default value
-published_version=$(pnpm view $package_name version)
+published_version=$(pnpm view $package_name version || echo "0.0.0")
 current_version=$(node -pe "require('./package.json').version")
 
 if [ "$published_version" = "$current_version" ]; then
