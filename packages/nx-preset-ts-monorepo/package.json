@@ -1,7 +1,7 @@
 {
   "name": "@shepherd23/nx-preset-ts-monorepo",
-  "version": "0.0.4",
-  "private": "false",
+  "private": false,
+  "version": "0.0.5",
   "dependencies": {
     "@nx/devkit": "16.9.1",
     "tslib": "^2.3.0"
