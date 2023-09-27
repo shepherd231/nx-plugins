@@ -1,0 +1,13 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rimraf dist",
+    "typecheck": "echo \"No typecheck script found. Skipping...\"",
+    "build": "echo \"No build script found. Skipping...\"",
+    "dev": "pnpm watch",
+    "watch": "echo \"No watch script found. Skipping...\""
+  }
+}

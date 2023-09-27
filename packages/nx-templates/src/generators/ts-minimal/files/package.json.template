@@ -1,0 +1,22 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "typecheck": "tsc",
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "pnpm watch",
+    "watch": "tsc -p tsconfig.build.json --watch",
+    "test": "jest"
+  }
+}

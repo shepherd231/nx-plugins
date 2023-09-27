@@ -1,0 +1,14 @@
+{
+  "generators": {
+    "ts-minimal": {
+      "factory": "./src/generators/ts-minimal/generator",
+      "schema": "./src/generators/ts-minimal/schema.json",
+      "description": "ts-minimal generator"
+    },
+    "py-minimal": {
+      "factory": "./src/generators/py-minimal/generator",
+      "schema": "./src/generators/py-minimal/schema.json",
+      "description": "py-minimal generator"
+    }
+  }
+}

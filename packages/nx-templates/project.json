@@ -1,0 +1,81 @@
+{
+  "name": "nx-templates",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-templates/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/nx-templates",
+        "main": "packages/nx-templates/src/index.ts",
+        "tsConfig": "packages/nx-templates/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-templates/*.md",
+          {
+            "input": "./packages/nx-templates/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-templates/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-templates",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-templates",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/nx-templates/**/*.ts",
+          "packages/nx-templates/package.json",
+          "packages/nx-templates/generators.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
+      "options": {
+        "jestConfig": "packages/nx-templates/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tools/scripts/publish.sh dist/packages/nx-templates"
+      },
+      "dependsOn": [
+        "build"
+      ]
+    }
+  },
+  "tags": []
+}

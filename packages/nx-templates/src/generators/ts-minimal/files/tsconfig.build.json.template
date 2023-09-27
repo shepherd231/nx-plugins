@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "./tsconfig.json",
+    "<%= repoRoot %>/tsconfig.build.json"
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "./tests/**"
+  ]
+}
