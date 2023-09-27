@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.6 (2023-09-27)
+
+
+### :mega: Other
+
+* resolve merge conflict ([2124286](https://github.com/shepherd231/nx-plugins/commit/2124286e7cbb7ea0a0c23efb2a68113e5527a640))
+
+
+
 ## 0.0.5 (2023-09-27)
 
 
