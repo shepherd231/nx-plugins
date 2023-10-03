@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.1 (2023-10-03)
+
+
+### :bug: Bug Fix
+
+* inject project name to poetry commands ([ff0d831](https://github.com/shepherd231/nx-plugins/commit/ff0d83109236424ceb7996e5937637559ff5dc8e))
+
+
+
 ## 0.1.0 (2023-10-03)
 
 
