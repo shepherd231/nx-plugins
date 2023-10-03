@@ -30,21 +30,21 @@ export async function pyMinimalGenerator(
       "add": {
         "executor": "nx:run-commands",
         "options": {
-          "command": "poetry add --group aml-utils",
+          "command": `poetry add --group ${name}`,
           "parallel": false
         }
       },
       "update": {
         "executor": "nx:run-commands",
         "options": {
-          "command": "poetry update --only aml-utils",
+          "command": `poetry update --only ${name}`,
           "parallel": false
         }
       },
       "remove": {
         "executor": "nx:run-commands",
         "options": {
-          "command": "poetry remove --group aml-utils",
+          "command": `poetry remove --group ${name}`,
           "parallel": false
         }
       }
