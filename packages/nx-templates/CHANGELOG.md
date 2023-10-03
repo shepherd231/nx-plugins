@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.0 (2023-10-03)
+
+
+### :rocket: New Features
+
+* add poetry workspace add functionality ([ebba3ea](https://github.com/shepherd231/nx-plugins/commit/ebba3ea96a838d78a4b6d263a8ce87baf8942c46))
+
+
+
 ## 0.0.7 (2023-09-27)
 
 
