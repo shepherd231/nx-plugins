@@ -1,7 +1,7 @@
 {
   "name": "@shepherd23/nx-preset-ts-monorepo",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/shepherd231/nx-plugins.git"
