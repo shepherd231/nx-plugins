@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.2 (2023-10-20)
+
+
+### :mega: Other
+
+* remove targets at py-minimal ([bc045af](https://github.com/shepherd231/nx-plugins/commit/bc045affdfa283d2fef460c2150835c5380a1fae))
+
+
+
 ## 0.1.1 (2023-10-03)
 
 
