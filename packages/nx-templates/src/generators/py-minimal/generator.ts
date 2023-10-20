@@ -25,30 +25,7 @@ export async function pyMinimalGenerator(
   addProjectConfiguration(tree, name, {
     root: projectRoot,
     projectType: 'library',
-    sourceRoot: `${projectRoot}/src`,
-    targets: {
-      "add": {
-        "executor": "nx:run-commands",
-        "options": {
-          "command": `poetry add --group ${name}`,
-          "parallel": false
-        }
-      },
-      "update": {
-        "executor": "nx:run-commands",
-        "options": {
-          "command": `poetry update --only ${name}`,
-          "parallel": false
-        }
-      },
-      "remove": {
-        "executor": "nx:run-commands",
-        "options": {
-          "command": `poetry remove --group ${name}`,
-          "parallel": false
-        }
-      }
-    },
+    sourceRoot: `${projectRoot}/src`
   });
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
   await formatFiles(tree);
