@@ -1,7 +1,7 @@
 {
   "name": "@shepherd23/nx-preset-py-standalone",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "repository": {
     "type": "git",

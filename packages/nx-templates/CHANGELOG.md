@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.6 (2023-10-24)
+
+
+### :bug: Bug Fix
+
+* add .nx at gitignore for presets" ([46cc6bf](https://github.com/shepherd231/nx-plugins/commit/46cc6bf0ac194506991c98e455cb0de9feeb22c7))
+
+
+
 ## 0.1.5 (2023-10-24)
 
 
