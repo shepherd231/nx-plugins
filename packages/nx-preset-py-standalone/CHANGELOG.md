@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.5 (2023-10-24)
+
+
+### :bug: Bug Fix
+
+* add node_modules for py-standalones gitignore ([285eda6](https://github.com/shepherd231/nx-plugins/commit/285eda6fd57d5d29d499dc810ebef53412d47f70))
+
+
+
 ## 0.0.4 (2023-10-24)
 
 
