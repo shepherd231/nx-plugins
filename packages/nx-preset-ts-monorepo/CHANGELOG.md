@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.8 (2023-10-24)
+
+
+### :bug: Bug Fix
+
+* add pre-commit as expected ([ef751fe](https://github.com/shepherd231/nx-plugins/commit/ef751fe30ab7dc184e27d209035090c11dd6fc70))
+
+
+
 ## 0.1.7 (2023-10-24)
 
 
