@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.3 (2023-10-24)
+
+
+### :mega: Other
+
+* add license ([f7941df](https://github.com/shepherd231/nx-plugins/commit/f7941df391a60e0e768ac7aa456df722ed4db69e))
+
+
+
 ## 0.0.2 (2023-10-24)
 
 
