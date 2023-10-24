@@ -20,11 +20,3 @@ nx generate @nx/plugin:generator <generator-name>
 
 See [Write a simple generator](https://nx.dev/extending-nx/recipes/local-generators) and [Creating files](https://nx.dev/extending-nx/recipes/creating-files) to obtain the sense of how it works.
 
-## Materials
-
-Useful materials related with this repository.
-
-- create-nx-plugin: https://nx.dev/extending-nx/recipes/create-preset#create-a-custom-plugin-preset
-- Write a simple generator: https://nx.dev/extending-nx/recipes/local-generators
-- Creating files: https://nx.dev/extending-nx/recipes/creating-files
-- Customizing generator options: https://nx.dev/extending-nx/recipes/generator-options
