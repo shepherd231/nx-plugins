@@ -1,0 +1,21 @@
+{
+  "name": "@shepherd23/nx-preset-py-standalone",
+  "private": false,
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shepherd231/nx-plugins.git"
+  },
+  "homepage": "https://github.com/shepherd231/nx-plugins/tree/master/packages/nx-preset-py-standalone",
+  "dependencies": {
+    "@nx/devkit": "16.9.1",
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "generators": "./generators.json",
+  "publishConfig": {
+    "access": "public"
+  }
+}

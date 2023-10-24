@@ -1,0 +1,15 @@
+# Dependencies
+.venv
+venv
+
+# Generated files by python
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Artifacts
+dist/
+lib/
+build/
