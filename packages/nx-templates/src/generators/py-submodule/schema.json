@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "PySubmodule",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the project. If namespaced with @, namespace will not be included in directory name.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "parent": {
+      "type": "string",
+      "description": "Name of the parent directory",
+      "$default": "packages"
+    },
+    "prefix": {
+      "type": "string",
+      "description": "Prefix for the package name",
+      "$default": ""
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
