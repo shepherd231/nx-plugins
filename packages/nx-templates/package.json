@@ -1,6 +1,7 @@
 {
   "name": "@shepherd23/nx-templates",
   "private": false,
+  "license": "MIT",
   "version": "0.1.4",
   "repository": {
     "type": "git",
