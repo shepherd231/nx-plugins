@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.9 (2023-10-24)
+
+
+### :bug: Bug Fix
+
+* add python deps ([2f9e290](https://github.com/shepherd231/nx-plugins/commit/2f9e2909005f1fed67fbef07eebef4c228466a5b))
+
+
+
 ## 0.1.8 (2023-10-24)
 
 
