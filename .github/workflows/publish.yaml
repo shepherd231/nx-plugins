@@ -16,6 +16,12 @@ jobs:
         with:
           version: 8
 
+      # Setup node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
       # Install dependencies
       - run: HUSKY=0 pnpm install --prod --frozen-lockfile
 
