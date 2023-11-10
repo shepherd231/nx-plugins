@@ -6,7 +6,7 @@ Checkout `packages/*/README.md` for each plugin's explanation.
 
 ## Materials
 
-Useful materials
+Useful materials for this repository:
 
 - create-nx-plugin (preset): https://nx.dev/extending-nx/recipes/create-preset#create-a-custom-plugin-preset
 - Write a simple generator: https://nx.dev/extending-nx/recipes/local-generators
