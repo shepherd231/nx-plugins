@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.8 (2023-11-10)
+
+
+### :bug: Bug Fix
+
+* resolve ts-monorepo ts-standalone mismatch ([268525d](https://github.com/shepherd231/nx-plugins/commit/268525db20d4cff3050ec34f4c79283e738a193c))
+
+
+
 ## 0.0.7 (2023-10-24)
 
 
