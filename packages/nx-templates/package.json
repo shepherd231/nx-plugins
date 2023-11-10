@@ -2,7 +2,7 @@
   "name": "@shepherd23/nx-templates",
   "private": false,
   "license": "MIT",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "scripts": {
     "build": "nx run @shepherd23/nx-templates:build",
     "test": "nx run @shepherd23/nx-templates:test",
