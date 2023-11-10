@@ -2,7 +2,13 @@
   "name": "@shepherd23/nx-preset-ts-standalone",
   "private": false,
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.1.9",
+  "scripts": {
+    "build": "nx run @shepherd23/nx-preset-ts-standalone:build",
+    "test": "nx run @shepherd23/nx-preset-ts-standalone:test",
+    "lint": "nx run @shepherd23/nx-preset-ts-standalone:lint",
+    "publish": "nx run @shepherd23/nx-preset-ts-standalone:publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shepherd231/nx-plugins.git"

@@ -3,6 +3,12 @@
   "private": false,
   "license": "MIT",
   "version": "0.1.9",
+  "scripts": {
+    "build": "nx run @shepherd23/nx-templates:build",
+    "test": "nx run @shepherd23/nx-templates:test",
+    "lint": "nx run @shepherd23/nx-templates:lint",
+    "publish": "nx run @shepherd23/nx-templates:publish"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shepherd231/nx-plugins.git"
