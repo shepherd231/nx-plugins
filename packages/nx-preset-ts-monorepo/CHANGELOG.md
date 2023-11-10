@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.0.9 (2023-11-10)
+
+
+### :bug: Bug Fix
+
+* **.github:** publish script ([377ca24](https://github.com/shepherd231/nx-plugins/commit/377ca24f1ef825fc4089ab7d354d79e27e66d6ef))
+
+
+
 ## 0.0.8 (2023-11-10)
 
 
