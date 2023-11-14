@@ -1,0 +1,10 @@
+/* eslint-disable */
+
+/**
+ * @type {import('@jest/types').Config.InitialOptions}
+ */
+module.exports = {
+  displayName: '<%= name %>',
+  preset: '../../jest.preset.js',
+  coverageDirectory: '../../coverage/packages/<%= name %>',
+};
