@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.0 (2023-11-14)
+
+
+### :rocket: New Features
+
+* add jest config files ([b59137a](https://github.com/shepherd231/nx-plugins/commit/b59137ae11e612e9b19b3649d63f23ea305e62e6))
+
+
+
 ## 0.1.11 (2023-11-10)
 
 
