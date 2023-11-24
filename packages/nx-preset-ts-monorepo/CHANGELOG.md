@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.0 (2023-11-24)
+
+
+### :rocket: New Features
+
+* add github actions template ([5423a54](https://github.com/shepherd231/nx-plugins/commit/5423a540114e4cc543b9513a632096cdf25e3949))
+
+
+
 ## 0.1.0 (2023-11-14)
 
 
