@@ -1,0 +1,52 @@
+name: On push to master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  # >>>>>>>>>> Start of versioning processes >>>>>>>>>>
+  bump_version:
+    uses: ./.github/workflows/bump-version.yaml
+  # <<<<<<<<<< End of versioning processes <<<<<<<<<<
+
+  # >>>>>>>>>> Start of building & publishing processes >>>>>>>>>>
+  #
+  # Add any build & publish processes here.
+  #
+  # <<<<<<<<<< End of building & publishing processes <<<<<<<<<<
+
+  # >>>>>>>>>> Start of release tag processes >>>>>>>>>>
+  release_tags:
+    # Release tags should occur after versioning process
+    # and every build & publish processes.
+    #
+    # Add any build & publish processes to `needs` list
+    # if you want to add additional building and publishing
+    # processes.
+    # needs: [bump_version, ...]
+    strategy:
+      matrix:
+        tag: ${{ fromJson(needs.bump_version.outputs.tags) }}
+    uses: ./.github/workflows/release-tag.yaml
+    secrets: inherit
+    with:
+      tag: ${{ matrix.tag }}
+      commit_hash: ${{ needs.bump_version.outputs.commit_hash }}
+      # organization: "your-organization"
+      # repo: "your-repo"
+  # <<<<<<<<<< End of release tag processes <<<<<<<<<<
+
+  # >>>>>>>>>> Start of clean up processes >>>>>>>>>>
+  cleanup_tags:
+    # This process will be executed if any of the
+    # processes above fails.
+    # needs: [bump_version, ..., release_tags]
+    if: ${{ always() }}
+    uses: ./.github/workflows/remove-tags.yaml
+    with:
+      # https://docs.github.com/en/actions/learn-github-actions/expressions#object-filters
+      results: ${{ toJson(needs.*.result) }}
+      tags: ${{ needs.bump_version.outputs.tags }}
+  # <<<<<<<<<< End of clean up processes <<<<<<<<<<

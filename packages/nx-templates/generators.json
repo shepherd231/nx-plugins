@@ -9,6 +9,21 @@
       "factory": "./src/generators/py-minimal/generator",
       "schema": "./src/generators/py-minimal/schema.json",
       "description": "py-minimal generator"
+    },
+    "py-submodule": {
+      "factory": "./src/generators/py-submodule/generator",
+      "schema": "./src/generators/py-submodule/schema.json",
+      "description": "py-submodule generator"
+    },
+    "gh-actions-publish": {
+      "factory": "./src/generators/gh-actions-publish/generator",
+      "schema": "./src/generators/gh-actions-publish/schema.json",
+      "description": "gh-actions-publish generator"
+    },
+    "gh-actions-publish-public": {
+      "factory": "./src/generators/gh-actions-publish-public/generator",
+      "schema": "./src/generators/gh-actions-publish-public/schema.json",
+      "description": "gh-actions-publish-public generator"
     }
   }
 }
