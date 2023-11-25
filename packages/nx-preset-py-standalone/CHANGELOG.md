@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.3.0 (2023-11-25)
+
+
+### :rocket: New Features
+
+* add revert bump version ([287728e](https://github.com/shepherd231/nx-plugins/commit/287728e694535e5c5f1f3fceb821d64b1f2a061b))
+
+
+
 ## 0.2.0 (2023-11-24)
 
 
