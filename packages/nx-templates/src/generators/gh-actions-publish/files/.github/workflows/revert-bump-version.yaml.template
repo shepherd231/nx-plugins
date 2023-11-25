@@ -1,0 +1,34 @@
+name: Revert bump version by Lerna
+
+on:
+  workflow_call:
+    inputs:
+      commit_msg:
+        description: 'Commit message lerna uses to bump version'
+        required: true
+        type: string
+
+jobs:
+  revert_bump_version:
+    name: Bump Version of Packages
+    runs-on: ubuntu-latest
+    steps:
+      # Check-out the repository
+      - uses: actions/checkout@v4
+
+      # Sync the source to the latest commit
+      - uses: 01Joseph-Hwang10/gh-actions@sync-with-source
+
+      - name: Revert bump version by Lerna
+        env:
+          INPUT_COMMIT_MSG: ${{ github.event.inputs.commit_msg }}
+        run: |
+          set -e
+
+          publishCommit=$(git log --grep="$INPUT_COMMIT_MSG" --pretty=format:%H | head -1)
+
+          git revert -n $publishCommit^..HEAD
+          git commit -m "chore: Revert bump version by Lerna"
+          git push
+
+          

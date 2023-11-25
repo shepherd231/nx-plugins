@@ -49,4 +49,11 @@ jobs:
       # https://docs.github.com/en/actions/learn-github-actions/expressions#object-filters
       results: ${{ toJson(needs.*.result) }}
       tags: ${{ needs.bump_version.outputs.tags }}
+
+  revert_bump_version:
+    needs: [cleanup_tags]
+    if: ${{ !success() }}
+    uses: ./.github/workflows/revert-bump-version.yaml
+    with:
+      commit_msg: Publish
   # <<<<<<<<<< End of clean up processes <<<<<<<<<<

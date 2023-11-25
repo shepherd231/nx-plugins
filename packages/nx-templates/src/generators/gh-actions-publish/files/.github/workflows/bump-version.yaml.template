@@ -21,19 +21,8 @@ jobs:
       # Check-out the repository
       - uses: actions/checkout@v4
 
-      # Set-up git user
-      - name: Set-up git user
-        run: |
-          set -e
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
       # Sync the source to the latest commit
-      - name: Sync source
-        run: |
-          set -e
-          git fetch --unshallow
-          git pull
+      - uses: 01Joseph-Hwang10/gh-actions@sync-with-source
 
       # Setup pnpm
       - uses: pnpm/action-setup@v2
