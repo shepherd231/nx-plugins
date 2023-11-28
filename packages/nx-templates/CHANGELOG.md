@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.1 (2023-11-28)
+
+
+### :mega: Other
+
+* lerna version independent for monorepo presets ([d8f3e88](https://github.com/shepherd231/nx-plugins/commit/d8f3e88fb0a29627f1e93de52ad45d377395b263))
+
+
+
 ## 0.4.0 (2023-11-25)
 
 
