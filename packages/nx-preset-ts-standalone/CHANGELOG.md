@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.5.0 (2023-11-29)
+
+
+### :rocket: New Features
+
+* add poethepoet as deps ([5a908c9](https://github.com/shepherd231/nx-plugins/commit/5a908c972f860ec498f7d90e439230cb23daa979))
+
+
+
 ## 0.4.1 (2023-11-28)
 
 
