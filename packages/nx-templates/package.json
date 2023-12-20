@@ -2,7 +2,7 @@
   "name": "@shepherd23/nx-templates",
   "private": false,
   "license": "MIT",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/shepherd231/nx-plugins.git"
