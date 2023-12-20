@@ -1,0 +1,30 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.0",
+  "license": "ISC",
+  "devDependencies": {
+    "@shepherd23/nx-templates": "^0.6.0",
+    "@types/jest": "^29.5.4",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-jest": "^27.4.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.3",
+    "nx": "16.8.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.2.2",
+    "@jest/types": "^29.6.3",
+    "@nx/jest": "^17.1.2",
+    "jest-environment-jsdom": "^29.4.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}

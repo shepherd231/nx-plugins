@@ -29,6 +29,16 @@
       "factory": "./src/generators/gha-release/generator",
       "schema": "./src/generators/gha-release/schema.json",
       "description": "gha-release generator"
+    },
+    "py-config": {
+      "factory": "./src/generators/py-config/generator",
+      "schema": "./src/generators/py-config/schema.json",
+      "description": "py-config generator"
+    },
+    "ts-config": {
+      "factory": "./src/generators/ts-config/generator",
+      "schema": "./src/generators/ts-config/schema.json",
+      "description": "ts-config generator"
     }
   }
 }
