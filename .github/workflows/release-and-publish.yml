@@ -22,29 +22,29 @@ jobs:
 
       # Checkout
       - uses: actions/checkout@v4
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         with:
           ref: ${{ github.event.after }}
 
       # Setup pnpm
       - uses: pnpm/action-setup@v2
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         with:
           version: 8
 
       # Setup node
       - uses: actions/setup-node@v3
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         with:
           node-version: 16
           cache: 'pnpm'
 
       # Install dependencies
       - run: HUSKY=0 pnpm install --prod --frozen-lockfile
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
 
       # Publish packages
       - run: pnpm nx run-many -t publish
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.releases_created }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
