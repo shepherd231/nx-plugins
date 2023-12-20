@@ -13,6 +13,11 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     outputs:
+      # Note that this value is stringified boolean value,
+      # not an actual boolean value. (i.e. "true" or "false")
+      #
+      # Also, if you're in a monorepo situation, you should use
+      # `releases_created` (plural) to determine if any release was created
       release_created: ${{ steps.release.outputs.release_created }}
     steps:
       - uses: google-github-actions/release-please-action@v4
