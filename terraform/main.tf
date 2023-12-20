@@ -6,13 +6,15 @@ data "google_project" "acacia_project" {
 # Github
 #---------------------------
 resource "github_repository" "nx_plugins" {
-  name          = "nx-plugins"
-  description   = "Set of nx-plugins for our projects."
-  homepage_url  = "https://www.npmjs.com/search?q=@shepherd23/nx-"
-  visibility    = "public"
-  has_issues    = true
-  has_projects  = true
-  has_downloads = true
+  name            = "nx-plugins"
+  description     = "Set of nx-plugins for our projects."
+  homepage_url    = "https://www.npmjs.com/search?q=@shepherd23/nx-"
+  visibility      = "public"
+  has_issues      = true
+  has_projects    = true
+  has_downloads   = true
+  has_discussions = false
+  has_wiki        = false
 }
 
 #---------------------------
