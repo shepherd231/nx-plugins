@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.7.0...nx-templates-v0.7.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* release created variable issue ([172f9e2](https://github.com/shepherd231/nx-plugins/commit/172f9e2d2de1a284b4aac87d0e2d2abb0eb42a2e))
+
 ## [0.7.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.6.0...nx-templates-v0.7.0) (2023-12-20)
 
 
