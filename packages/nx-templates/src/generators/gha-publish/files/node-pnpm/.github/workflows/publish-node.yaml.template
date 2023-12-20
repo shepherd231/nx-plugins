@@ -1,0 +1,51 @@
+name: Build and Publish Node packages
+
+on:
+  workflow_call:
+    inputs:
+      ref:
+        description: 'Ref to sync to'
+        required: true
+        type: string
+    secrets:
+      credentials:
+        description: 'GCP Credentials in JSON format'
+        required: true
+
+jobs:
+  publish:
+    name: Build and Publish Node packages
+    runs-on: ubuntu-latest
+    steps:
+      # Check-out the repository
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+
+      # Setup pnpm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      # Setup node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      # GCP Authentication
+      - uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.credentials }}'
+
+      # Install dependencies
+      - run: pnpm install
+
+      # Build packages
+      - run: pnpm nx run-many --target=build --parallel
+
+      # Authenticate with registry
+      - run: pnpm nx run-many --target=login --parallel
+
+      # Publish packages
+      - run: pnpm nx run-many --target=publish --parallel

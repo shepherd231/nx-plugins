@@ -1,0 +1,8 @@
+// Set-up following configuration file, referring with the following link:
+// https://github.com/googleapis/release-please
+//
+// Configuration below is just for an example. You need to modify it for your project.
+{
+  // "packages/pkg-a": "0.0.0",
+  // "packages/pkg-b": "0.0.0"
+}

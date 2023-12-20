@@ -15,15 +15,20 @@
       "schema": "./src/generators/py-submodule/schema.json",
       "description": "py-submodule generator"
     },
-    "gh-actions-publish": {
-      "factory": "./src/generators/gh-actions-publish/generator",
-      "schema": "./src/generators/gh-actions-publish/schema.json",
-      "description": "gh-actions-publish generator"
+    "gha-publish": {
+      "factory": "./src/generators/gha-publish/generator",
+      "schema": "./src/generators/gha-publish/schema.json",
+      "description": "gha-publish generator"
     },
-    "gh-actions-publish-public": {
-      "factory": "./src/generators/gh-actions-publish-public/generator",
-      "schema": "./src/generators/gh-actions-publish-public/schema.json",
-      "description": "gh-actions-publish-public generator"
+    "gha-public": {
+      "factory": "./src/generators/gha-public/generator",
+      "schema": "./src/generators/gha-public/schema.json",
+      "description": "gha-public generator"
+    },
+    "gha-release": {
+      "factory": "./src/generators/gha-release/generator",
+      "schema": "./src/generators/gha-release/schema.json",
+      "description": "gha-release generator"
     }
   }
 }

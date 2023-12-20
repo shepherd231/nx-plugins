@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "GhaPublish",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "language": {
+      "type": "string",
+      "enum": [
+        "python",
+        "node"
+      ],
+      "aliases": [
+        "lang",
+        "l"
+      ],
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What package language do you want to publish?"
+    },
+    "packageManager": {
+      "type": "string",
+      "description": "",
+      "enum": [
+        "npm",
+        "yarn",
+        "pnpm",
+        "pip",
+        "poetry"
+      ],
+      "aliases": [
+        "managaer",
+        "pm",
+        "m"
+      ],
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": "What package manager do you want to use?"
+    }
+  },
+  "required": [
+    "language",
+    "packageManager"
+  ]
+}

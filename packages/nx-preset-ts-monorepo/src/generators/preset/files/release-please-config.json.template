@@ -1,0 +1,32 @@
+// Set-up following configuration file, referring with the following link:
+// https://github.com/googleapis/release-please
+//
+// Configuration below is just for an example. You need to modify it for your project.
+{
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "updatePeerDependencies": true
+    }
+  ],
+  "packages": {
+    // "packages/pkg-a": {
+    //   "release-type": "node",
+    //   "changelog-path": "CHANGELOG.md",
+    //   "bump-minor-pre-major": false,
+    //   "bump-patch-for-minor-pre-major": false,
+    //   "draft": false,
+    //   "prerelease": false
+    // },
+    // "packages/pkg-b": {
+    //   "release-type": "python",
+    //   "package-name": "pkg-b",
+    //   "changelog-path": "CHANGELOG.md",
+    //   "bump-minor-pre-major": false,
+    //   "bump-patch-for-minor-pre-major": false,
+    //   "draft": false,
+    //   "prerelease": false
+    // }
+  },
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

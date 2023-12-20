@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "GhaPublic",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "org": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What is your github organization name?"
+    },
+    "repo": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": "What is your github repository name?"
+    }
+  },
+  "required": [
+    "org",
+    "repo"
+  ]
+}
