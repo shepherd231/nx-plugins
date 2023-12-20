@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.6.0...nx-templates-v0.7.0) (2023-12-20)
+
+
+### Features
+
+* **@shepherd23/nx-templates:** add config templates ([45999d0](https://github.com/shepherd231/nx-plugins/commit/45999d09a428f43462bc84f1730e78bb5ce203f3))
+
 ## [0.6.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.5.0...nx-templates-v0.6.0) (2023-12-20)
 
 
