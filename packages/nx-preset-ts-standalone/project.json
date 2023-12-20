@@ -15,6 +15,7 @@
         "tsConfig": "packages/nx-preset-ts-standalone/tsconfig.lib.json",
         "assets": [
           "packages/nx-preset-ts-standalone/*.md",
+          "packages/nx-preset-ts-standalone/.npmrc",
           {
             "input": "./packages/nx-preset-ts-standalone/src",
             "glob": "**/!(*.ts)",
@@ -70,7 +71,8 @@
     "publish": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tools/scripts/publish.sh dist/packages/nx-preset-ts-standalone"
+        "command": "pnpm publish --no-git-checks",
+        "cwd": "dist/packages/nx-preset-ts-standalone || echo 'Already published: nx-preset-ts-standalone'"
       },
       "dependsOn": [
         "build"
