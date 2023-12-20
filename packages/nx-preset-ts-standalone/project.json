@@ -71,8 +71,8 @@
     "publish": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "pnpm publish --no-git-checks",
-        "cwd": "dist/packages/nx-preset-ts-standalone || echo 'Already published: nx-preset-ts-standalone'"
+        "command": "pnpm publish --no-git-checks || echo 'Already published: nx-preset-ts-standalone'",
+        "cwd": "dist/packages/nx-preset-ts-standalone"
       },
       "dependsOn": [
         "build"
