@@ -1,0 +1,50 @@
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: Release and publish
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          token: ${{ secrets.GH_PAT }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+      # Checkout
+      - uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          ref: ${{ github.event.after }}
+
+      # Setup pnpm
+      - uses: pnpm/action-setup@v2
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          version: 8
+
+      # Setup node
+      - uses: actions/setup-node@v3
+        if: ${{ steps.release.outputs.release_created }}
+        with:
+          node-version: 16
+          cache: 'pnpm'
+
+      # Install dependencies
+      - run: HUSKY=0 pnpm install --prod --frozen-lockfile
+        if: ${{ steps.release.outputs.release_created }}
+
+      # Publish packages
+      - run: pnpm nx run-many -t publish
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
