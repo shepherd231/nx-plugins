@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/shepherd231/nx-plugins/compare/nx-preset-py-standalone-v0.4.0...nx-preset-py-standalone-v0.5.0) (2023-12-20)
+
+
+### Features
+
+* add nx-preset-py-standalone ([79c4462](https://github.com/shepherd231/nx-plugins/commit/79c446210e496f5bd91e04e88f3545ed8a43eb33))
+* add poethepoet as deps ([5a908c9](https://github.com/shepherd231/nx-plugins/commit/5a908c972f860ec498f7d90e439230cb23daa979))
+* add release please ([489321f](https://github.com/shepherd231/nx-plugins/commit/489321f4528c5870af61a05cae7b50b9acc1c95d))
+
+
+### Bug Fixes
+
+* **.github:** publish script ([377ca24](https://github.com/shepherd231/nx-plugins/commit/377ca24f1ef825fc4089ab7d354d79e27e66d6ef))
+* add .nx at gitignore for presets" ([46cc6bf](https://github.com/shepherd231/nx-plugins/commit/46cc6bf0ac194506991c98e455cb0de9feeb22c7))
+* add node_modules for py-standalones gitignore ([285eda6](https://github.com/shepherd231/nx-plugins/commit/285eda6fd57d5d29d499dc810ebef53412d47f70))
+* add pre-commit as expected ([ef751fe](https://github.com/shepherd231/nx-plugins/commit/ef751fe30ab7dc184e27d209035090c11dd6fc70))
+* add python deps ([2f9e290](https://github.com/shepherd231/nx-plugins/commit/2f9e2909005f1fed67fbef07eebef4c228466a5b))
+* resolve ts-monorepo ts-standalone mismatch ([268525d](https://github.com/shepherd231/nx-plugins/commit/268525db20d4cff3050ec34f4c79283e738a193c))
+
 ## 0.4.0 (2023-11-29)
 
 

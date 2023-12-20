@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.0](https://github.com/shepherd231/nx-plugins/compare/nx-preset-ts-monorepo-v0.4.0...nx-preset-ts-monorepo-v0.5.0) (2023-12-20)
+
+
+### Features
+
+* add jest config files ([b59137a](https://github.com/shepherd231/nx-plugins/commit/b59137ae11e612e9b19b3649d63f23ea305e62e6))
+* add release please ([489321f](https://github.com/shepherd231/nx-plugins/commit/489321f4528c5870af61a05cae7b50b9acc1c95d))
+
+
+### Bug Fixes
+
+* **.github:** publish script ([377ca24](https://github.com/shepherd231/nx-plugins/commit/377ca24f1ef825fc4089ab7d354d79e27e66d6ef))
+* add .nx at gitignore for presets" ([46cc6bf](https://github.com/shepherd231/nx-plugins/commit/46cc6bf0ac194506991c98e455cb0de9feeb22c7))
+* no packages in standalone presets ([45fc44c](https://github.com/shepherd231/nx-plugins/commit/45fc44c01c6a476d0951da036608b50c1219bd43))
+* public package ([6b0d6bf](https://github.com/shepherd231/nx-plugins/commit/6b0d6bf1bf12b3a413c537bb38a80cc17de22763))
+* resolve ts-monorepo ts-standalone mismatch ([268525d](https://github.com/shepherd231/nx-plugins/commit/268525db20d4cff3050ec34f4c79283e738a193c))
+
 ## 0.4.0 (2023-11-29)
 
 
