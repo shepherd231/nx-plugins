@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.5.0...nx-templates-v0.6.0) (2023-12-20)
+
+
+### Features
+
+* add github actions template ([5423a54](https://github.com/shepherd231/nx-plugins/commit/5423a540114e4cc543b9513a632096cdf25e3949))
+* add jest config files ([b59137a](https://github.com/shepherd231/nx-plugins/commit/b59137ae11e612e9b19b3649d63f23ea305e62e6))
+* add poetry workspace add functionality ([ebba3ea](https://github.com/shepherd231/nx-plugins/commit/ebba3ea96a838d78a4b6d263a8ce87baf8942c46))
+* add py-submodule template ([42cf144](https://github.com/shepherd231/nx-plugins/commit/42cf144799eb2e38531dbbe8a5d21a3ee715f9eb))
+* add release please ([489321f](https://github.com/shepherd231/nx-plugins/commit/489321f4528c5870af61a05cae7b50b9acc1c95d))
+* add revert bump version ([287728e](https://github.com/shepherd231/nx-plugins/commit/287728e694535e5c5f1f3fceb821d64b1f2a061b))
+
+
+### Bug Fixes
+
+* **.github:** publish script ([377ca24](https://github.com/shepherd231/nx-plugins/commit/377ca24f1ef825fc4089ab7d354d79e27e66d6ef))
+* inject project name to poetry commands ([ff0d831](https://github.com/shepherd231/nx-plugins/commit/ff0d83109236424ceb7996e5937637559ff5dc8e))
+* public package ([6b0d6bf](https://github.com/shepherd231/nx-plugins/commit/6b0d6bf1bf12b3a413c537bb38a80cc17de22763))
+* resolve ts-monorepo ts-standalone mismatch ([268525d](https://github.com/shepherd231/nx-plugins/commit/268525db20d4cff3050ec34f4c79283e738a193c))
+
 ## 0.5.0 (2023-11-29)
 
 
