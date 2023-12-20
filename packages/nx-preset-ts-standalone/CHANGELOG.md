@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/shepherd231/nx-plugins/compare/nx-preset-ts-standalone-v0.6.0...nx-preset-ts-standalone-v0.6.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* ci for nx preset ts stadalone ([5d0d6c1](https://github.com/shepherd231/nx-plugins/commit/5d0d6c167bfee782c73efe9c30fbc50188c07594))
+
 ## [0.6.0](https://github.com/shepherd231/nx-plugins/compare/nx-preset-ts-standalone-v0.5.0...nx-preset-ts-standalone-v0.6.0) (2023-12-20)
 
 
