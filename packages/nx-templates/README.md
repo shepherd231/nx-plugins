@@ -13,7 +13,7 @@ See each template's README.md for each template's usage.
 You can generate boilerplate of generator by the following command.
 
 ```bash
-nx generate @nx/plugin:generator <generator-name>
+nx generate @nx/plugin:generator <generator-name> --project=nx-templates
 ```
 
 `src/generators/*` includes all the templates. Each template is a boilerplate generator powered by `nx`.
