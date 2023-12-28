@@ -1,0 +1,7 @@
+{
+  "extends": "<%= repoRoot %>/tsconfig.json",
+  "include": [
+    "./src/**/*",
+    "./tests/**/*"
+  ]
+}

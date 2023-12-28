@@ -1,0 +1,52 @@
+import { <%= pascalCasedName %>Client } from '../src';
+
+describe('<%= pascalCasedName %>Client', () => {
+  let client: <%= pascalCasedName %>Client;
+  describe('constructor', () => {
+    it('should create a client with the correct url and api key', () => {
+      client = new <%= pascalCasedName %>Client({
+        url: 'http://localhost:3000',
+        apiKey: '1234',
+      });
+      expect(client).toBeDefined();
+      // @ts-ignore
+      expect(client.url).toEqual('http://localhost:3000');
+      // @ts-ignore
+      expect(client.apiKey).toEqual('1234');
+    });
+  });
+
+  describe('configWithDefaults', () => {
+    it('should return a config with the correct headers', () => {
+      client = new <%= pascalCasedName %>Client({
+        url: 'http://localhost:3000',
+        apiKey: '1234',
+      });
+      // @ts-ignore
+      const config = client.configWithDefaults();
+      expect(config).toBeDefined();
+      expect(config.headers).toBeDefined();
+      expect(config.headers['X-API-KEY']).toEqual('1234');
+    });
+
+    it('should return a config with the correct headers and config', () => {
+      client = new <%= pascalCasedName %>Client({
+        url: 'http://localhost:3000',
+        apiKey: '1234',
+      });
+      // @ts-ignore
+      const config = client.configWithDefaults({
+        headers: { 'X-TEST': 'test' },
+      });
+      expect(config).toBeDefined();
+      expect(config.headers).toBeDefined();
+      /**
+       * @description
+       * Note that if you pass in a config with headers,
+       * it will overwrite the default headers.
+       */
+      expect(config.headers['X-API-KEY']).toEqual(undefined);
+      expect(config.headers['X-TEST']).toEqual('test');
+    });
+  });
+});

@@ -1,0 +1,2 @@
+export * from './client.ts.template';
+export * from './gen/index.ts.template';

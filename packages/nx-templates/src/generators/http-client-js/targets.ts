@@ -1,37 +1,42 @@
-export const targets = {
+interface CreateHttpClientJsTargetsOptions {
+  cwd: string;
+  repoRoot: string;
+}
+
+export const createHttpClientJsTargets = (options: CreateHttpClientJsTargetsOptions) => ({
   "clean": {
     "executor": "nx:run-commands",
     "options": {
-      "command": "pnpm rimraf dist .tsbuildinfo ../../dist",
-      "cwd": "client/js"
+      "command": `pnpm rimraf dist .tsbuildinfo ${options.repoRoot}/dist`,
+      "cwd": options.cwd
     }
   },
   "typecheck": {
     "executor": "nx:run-commands",
     "options": {
       "command": "pnpm tsc --noEmit",
-      "cwd": "client/js"
+      "cwd": options.cwd
     }
   },
   "build": {
     "executor": "nx:run-commands",
     "options": {
       "command": "pnpm tsc --project tsconfig.build.json",
-      "cwd": "client/js"
+      "cwd": options.cwd
     }
   },
   "login": {
     "executor": "nx:run-commands",
     "options": {
       "command": "pnpm dlx google-artifactregistry-auth",
-      "cwd": "client/js"
+      "cwd": options.cwd
     }
   },
   "publish": {
     "executor": "nx:run-commands",
     "options": {
-      "command": "pnpm publish --no-git-checks || echo 'Already published: client/js'",
-      "cwd": "client/js"
+      "command": `pnpm publish --no-git-checks || echo 'Already published: ${options.cwd}'`,
+      "cwd": options.cwd
     }
   },
   "test": {
@@ -40,7 +45,8 @@ export const targets = {
       "{workspaceRoot}/coverage/{projectRoot}"
     ],
     "options": {
-      "jestConfig": "client/js/jest.config.ts"
+      "jestConfig": `${options.cwd}/jest.config.ts`
     }
   }
 }
+)

@@ -39,6 +39,11 @@
       "factory": "./src/generators/ts-config/generator",
       "schema": "./src/generators/ts-config/schema.json",
       "description": "ts-config generator"
+    },
+    "http-client-js": {
+      "factory": "./src/generators/http-client-js/generator",
+      "schema": "./src/generators/http-client-js/schema.json",
+      "description": "http-client-js generator"
     }
   }
 }

@@ -10,6 +10,7 @@
   "homepage": "https://github.com/shepherd231/nx-plugins/tree/master/packages/nx-templates",
   "dependencies": {
     "@nx/devkit": "16.9.1",
+    "case": "^1.6.3",
     "tslib": "^2.3.0"
   },
   "type": "commonjs",

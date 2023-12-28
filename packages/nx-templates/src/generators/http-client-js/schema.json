@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "HttpClientJs",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the project.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "path": {
+      "type": "string",
+      "description": "Path to the package directory. Defaults to `packages/${name}`."
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

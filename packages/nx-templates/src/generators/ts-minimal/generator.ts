@@ -6,7 +6,7 @@ import {
 } from '@nx/devkit';
 import * as path from 'path';
 import { TsMinimalGeneratorOptions, TsMinimalGeneratorSchema } from './schema';
-import { targets } from './values';
+import { createTsMinimalTargets } from './targets';
 
 const getRepoRootPath = (folderPath: string) => {
   return new Array(folderPath.split('/').length).fill("..").join('/');
@@ -27,7 +27,7 @@ export async function tsMinimalGenerator(
     root: projectRoot,
     projectType: 'library',
     sourceRoot: `${projectRoot}/src`,
-    targets: targets,
+    targets: createTsMinimalTargets({repoRoot: options.repoRoot, cwd: projectRoot}),
   });
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
   await formatFiles(tree);

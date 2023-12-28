@@ -1,0 +1,43 @@
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
+import urlJoin from 'url-join';
+import {
+  <%= pascalCasedName %>,
+} from './gen';
+
+export interface <%= pascalCasedName %>ClientOptions {
+  /**
+   * The URL of the Data Crafter server.
+   */
+  url: string;
+  /**
+   * The API key to use for authentication.
+   */
+  apiKey: string;
+}
+
+export class <%= pascalCasedName %>Client {
+  private readonly url: string;
+  private readonly apiKey: string;
+
+  constructor(options: <%= pascalCasedName %>ClientOptions) {
+    this.url = options.url;
+    this.apiKey = options.apiKey;
+  }
+
+  private configWithDefaults(config?: AxiosRequestConfig): AxiosRequestConfig {
+    return {
+      headers: {
+        'X-API-KEY': this.apiKey,
+      },
+      ...config,
+    };
+  }
+
+  async get<%= pascalCasedName %>(
+    <%= camelCasedName %>Id: string,
+    config?: AxiosRequestConfig,
+  ): Promise<AxiosResponse<<%= pascalCasedName %>>> {
+    const url = urlJoin(this.url, `/<%= pascalCasedName %>/${<%= pascalCasedName %>Id}`);
+    return axios.get(url, this.configWithDefaults(config));
+  }
+}
