@@ -29,18 +29,16 @@ The name of the project to generate.
 pnpm nx g @shepherd23/nx-templates:py-submodule my-package
 ```
 
-### Options
+#### [Optional] `path`
 
-#### [Optional] `parent`
+The path directory to generate the project. 
 
-The parent directory to generate the project. 
+Defaults to `packages/${name}`.
 
-Defaults to `packages`.
-
-You can specify the parent directory with `--parent` option. For example, the command below
+You can specify the path directory with `--path` option. For example, the command below
 
 ```bash
-pnpm nx g @shepherd23/nx-templates:py-submodule my-package --parent=libs
+pnpm nx g @shepherd23/nx-templates:py-submodule my-package --path=libs/package
 ```
 
-will produce a `my-package` directory under the `libs` directory.
+will produce a `package` directory under the `libs/package` directory.

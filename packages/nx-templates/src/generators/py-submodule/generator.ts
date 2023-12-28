@@ -11,8 +11,7 @@ export async function pySubmoduleGenerator(
   tree: Tree,
   options: PySubmoduleGeneratorSchema
 ) {
-  const parent = options.parent || 'packages';
-  const projectRoot = `${parent}/${options.name}`;
+  const projectRoot = options.path || `packages/${options.name}`
   
   addProjectConfiguration(tree, options.name, {
     root: projectRoot,

@@ -11,18 +11,9 @@ export async function pyMinimalGenerator(
   tree: Tree,
   options: PyMinimalGeneratorSchema
 ) {
-  const folderName = options.name.split('/').pop();
-  const parent = options.parent || 'packages';
-  const projectRoot = `${parent}/${folderName}`;
-  const prefix = options.prefix || "";
-  const name = `${prefix}${folderName}`
-  options = {
-    name,
-    parent,
-    prefix, 
-  }
+  const projectRoot = options.path || `packages/${options.name}`
   
-  addProjectConfiguration(tree, name, {
+  addProjectConfiguration(tree, options.name, {
     root: projectRoot,
     projectType: 'library',
     sourceRoot: `${projectRoot}/src`

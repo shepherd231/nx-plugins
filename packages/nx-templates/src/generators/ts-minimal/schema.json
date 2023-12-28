@@ -13,10 +13,9 @@
       },
       "x-prompt": "What name would you like to use?"
     },
-    "parent": {
+    "path": {
       "type": "string",
-      "description": "Name of the parent directory",
-      "$default": "packages"
+      "description": "Path to the package directory. Defaults to `packages/${name:without-namespace}`."
     }
   },
   "required": [

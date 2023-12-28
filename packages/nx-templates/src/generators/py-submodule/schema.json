@@ -6,22 +6,16 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "Name of the project. If namespaced with @, namespace will not be included in directory name.",
+      "description": "Name of the project.",
       "$default": {
         "$source": "argv",
         "index": 0
       },
       "x-prompt": "What name would you like to use?"
     },
-    "parent": {
+    "path": {
       "type": "string",
-      "description": "Name of the parent directory",
-      "$default": "packages"
-    },
-    "prefix": {
-      "type": "string",
-      "description": "Prefix for the package name",
-      "$default": ""
+      "description": "Path to the package directory. Defaults to `packages/${name}`."
     }
   },
   "required": [

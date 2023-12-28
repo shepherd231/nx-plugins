@@ -6,6 +6,5 @@
  */
 export interface PyMinimalGeneratorSchema {
   name: string;
-  parent?: string;
-  prefix?: string;
+  path?: string;
 }

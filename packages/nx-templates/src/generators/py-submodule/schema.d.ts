@@ -6,5 +6,5 @@
  */
 export interface PySubmoduleGeneratorSchema {
   name: string;
-  parent?: string;
+  path?: string;
 }

@@ -28,30 +28,16 @@ pnpm nx g @shepherd23/nx-templates:py-minimal my-package
 
 ### Options
 
-#### [Optional] `parent`
+#### [Optional] `path`
 
-The parent directory to generate the project. 
+The path directory to generate the project. 
 
-Defaults to `packages`.
+Defaults to `packages/${name}`.
 
-You can specify the parent directory with `--parent` option. For example, the command below
-
-```bash
-pnpm nx g @shepherd23/nx-templates:py-minimal my-package --parent=libs
-```
-
-will produce a `my-package` directory under the `libs` directory.
-
-### [Optional] `prefix`
-
-The prefix to apply to package name of the project.
-
-This option is useful when you want to name the project with a prefix but want to exclude the prefix from the directory name.
-
-For example:
+You can specify the path directory with `--path` option. For example, the command below
 
 ```bash
-pnpm nx g @shepherd23/nx-templates:py-minimal my-package --prefix=my-org-
+pnpm nx g @shepherd23/nx-templates:py-minimal my-package --path=libs/package
 ```
 
-will produce a `my-package` directory under the `packages` directory, but the package name will be `my-org-my-package`.
+will produce a `package` directory under the `libs/package` directory.

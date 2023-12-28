@@ -6,7 +6,7 @@
  */
 export interface TsMinimalGeneratorSchema {
   name: string;
-  parent?: string;
+  path?: string;
 }
 
 export interface TsMinimalGeneratorOptions extends TsMinimalGeneratorSchema {

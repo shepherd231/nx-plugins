@@ -28,20 +28,20 @@ If namespaced with `@`, it will be used as the package name. For example, the co
 pnpm nx g @shepherd23/nx-templates:ts-minimal @project/package
 ```
 
-will produce a project with the name (at the package.json) as-is: `@project/package`, and the project directory name as `package` under the [parent](#optional-parent) option value.
+will produce a project with the name (at the package.json) as-is: `@project/package`.
 
 ### Options
 
-#### [Optional] `parent`
+#### [Optional] `path`
 
-The parent directory to generate the project. 
+The path directory to generate the project. 
 
-Defaults to `packages`.
+Defaults to `packages/${name:without-namespace}`.
 
-You can specify the parent directory with `--parent` option. For example, the command below
+You can specify the path directory with `--path` option. For example, the command below
 
 ```bash
-pnpm nx g @shepherd23/nx-templates:ts-minimal @project/package --parent=libs
+pnpm nx g @shepherd23/nx-templates:ts-minimal @project/package --path=libs/package
 ```
 
-will produce a `package` directory under the `libs` directory.
+will produce a `package` directory under the `libs/package` directory.
