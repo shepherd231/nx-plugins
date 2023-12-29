@@ -2,5 +2,5 @@
   "packages/nx-preset-py-standalone": "0.5.1",
   "packages/nx-preset-ts-monorepo": "0.5.1",
   "packages/nx-preset-ts-standalone": "0.6.2",
-  "packages/nx-templates": "1.0.0"
+  "packages/nx-templates": "1.1.0"
 }
