@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.7.1...nx-templates-v1.0.0) (2023-12-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* **@shepherd23/nx-templates:** change argument names
+
+### Features
+
+* **@shepherd23/nx-templates:** change argument names ([012c50b](https://github.com/shepherd231/nx-plugins/commit/012c50b16b201f344b8feb1126b1f3914aad9b50))
+* add http client js generator ([5fa0042](https://github.com/shepherd231/nx-plugins/commit/5fa0042ddc8d49caf44a8a87f72d2f36161bbfd4))
+
 ## [0.7.1](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.7.0...nx-templates-v0.7.1) (2023-12-20)
 
 
