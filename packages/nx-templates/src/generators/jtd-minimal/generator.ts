@@ -10,10 +10,14 @@ import { createJtdMinimalTargets } from './targets';
 
 export async function jtdMinimalGenerator(
   tree: Tree,
-  options: JtdMinimalGeneratorSchema
+  userOptions: JtdMinimalGeneratorSchema
 ) {
-  const projectRoot = options.path;
-  const projectName = options.name || projectRoot.replace(/\//g, '-');
+  const projectRoot = userOptions.path;
+  const projectName = userOptions.name || projectRoot.replace(/\//g, '-');
+  const options: Required<JtdMinimalGeneratorSchema> = {
+    path: projectRoot,
+    name: projectName,
+  }
   addProjectConfiguration(tree, projectName, {
     root: projectRoot,
     projectType: 'library',
