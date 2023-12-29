@@ -44,6 +44,11 @@
       "factory": "./src/generators/http-client-js/generator",
       "schema": "./src/generators/http-client-js/schema.json",
       "description": "http-client-js generator"
+    },
+    "jtd-minimal": {
+      "factory": "./src/generators/jtd-minimal/generator",
+      "schema": "./src/generators/jtd-minimal/schema.json",
+      "description": "jtd-minimal generator"
     }
   }
 }
