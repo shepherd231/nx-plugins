@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.1.0...nx-templates-v1.1.1) (2023-12-29)
+
+
+### Bug Fixes
+
+* give name to jtd codebuild generator ([500914a](https://github.com/shepherd231/nx-plugins/commit/500914ad7590a8b4d4029d6545352c84d3f15658))
+
 ## [1.1.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.0.0...nx-templates-v1.1.0) (2023-12-29)
 
 
