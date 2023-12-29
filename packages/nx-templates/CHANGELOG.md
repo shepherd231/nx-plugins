@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.0.0...nx-templates-v1.1.0) (2023-12-29)
+
+
+### Features
+
+* add jtd-minimal generator ([a9d9073](https://github.com/shepherd231/nx-plugins/commit/a9d9073eb723e161237f514291af6fa09f05932e))
+
 ## [1.0.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v0.7.1...nx-templates-v1.0.0) (2023-12-28)
 
 
