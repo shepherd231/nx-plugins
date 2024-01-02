@@ -6,6 +6,8 @@ import {
 import * as path from 'path';
 import { PyConfigGeneratorSchema } from './schema';
 
+const filesToUpdate = ['pyproject.toml'];
+
 export async function pyConfigGenerator(
   tree: Tree,
   options: PyConfigGeneratorSchema
