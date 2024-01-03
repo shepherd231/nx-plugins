@@ -3,16 +3,23 @@ import {
   generateFiles,
   Tree,
 } from '@nx/devkit';
-import * as path from 'path';
 import { PyConfigGeneratorSchema } from './schema';
+import { backupFile } from '../../utils';
+import { join } from 'path';
 
-const filesToUpdate = ['pyproject.toml'];
+const filesToBackup = ['pyproject.toml']
 
 export async function pyConfigGenerator(
   tree: Tree,
   options: PyConfigGeneratorSchema
 ) {
-  generateFiles(tree, path.join(__dirname, 'files'), '.', options);
+  // If each files to backup exists, create a backup
+  filesToBackup.forEach((filepath) => backupFile(tree, filepath))
+
+  // Generate files for the project
+  generateFiles(tree, join(__dirname, 'files'), '.', options);
+  
+  // Format files
   await formatFiles(tree);
 }
 

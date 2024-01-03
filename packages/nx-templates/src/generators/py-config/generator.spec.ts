@@ -1,5 +1,5 @@
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nx/devkit';
+import { Tree } from '@nx/devkit';
 
 import { pyConfigGenerator } from './generator';
 import { PyConfigGeneratorSchema } from './schema';
@@ -14,7 +14,12 @@ describe('py-config generator', () => {
 
   it('should run successfully', async () => {
     await pyConfigGenerator(tree, options);
-    const config = readProjectConfiguration(tree, 'test');
-    expect(config).toBeDefined();
+    expect(tree.exists('pyproject.toml')).toBeTruthy();
   });
+
+  it('should create a backup of pyproject.toml if it exists', async () => {
+    tree.write('pyproject.toml', '# some content');
+    await pyConfigGenerator(tree, options);
+    expect(tree.exists('pyproject.old.toml')).toBeTruthy();
+  })
 });

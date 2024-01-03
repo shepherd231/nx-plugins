@@ -1,5 +1,5 @@
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nx/devkit';
+import { Tree } from '@nx/devkit';
 
 import { ghaReleaseGenerator } from './generator';
 import { GhaReleaseGeneratorSchema } from './schema';
@@ -14,7 +14,6 @@ describe('gharelease generator', () => {
 
   it('should run successfully', async () => {
     await ghaReleaseGenerator(tree, options);
-    const config = readProjectConfiguration(tree, 'test');
-    expect(config).toBeDefined();
+    expect(tree.exists('release-please-config.json')).toBeTruthy();
   });
 });
