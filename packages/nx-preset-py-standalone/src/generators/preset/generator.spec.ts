@@ -1,5 +1,5 @@
 import { createTreeWithEmptyWorkspace } from '@nx/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nx/devkit';
+import { Tree } from '@nx/devkit';
 
 import { presetGenerator } from './generator';
 import { PresetGeneratorSchema } from './schema';
@@ -14,7 +14,6 @@ describe('preset generator', () => {
 
   it('should run successfully', async () => {
     await presetGenerator(tree, options);
-    const config = readProjectConfiguration(tree, 'test');
-    expect(config).toBeDefined();
+    expect(tree.exists('pyproject.toml')).toBeTruthy();
   });
 });
