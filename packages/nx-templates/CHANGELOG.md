@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.1.1...nx-templates-v1.2.0) (2024-01-03)
+
+
+### Features
+
+* add backup functionality to config generators ([290b4b2](https://github.com/shepherd231/nx-plugins/commit/290b4b2634b794d60a1cfeb6a5738fb31abcbdb9))
+
 ## [1.1.1](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.1.0...nx-templates-v1.1.1) (2023-12-29)
 
 
