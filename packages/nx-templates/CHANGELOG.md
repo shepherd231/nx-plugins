@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.2.0...nx-templates-v1.3.0) (2024-01-08)
+
+
+### Features
+
+* add husky config to ts-config ([94e0f3b](https://github.com/shepherd231/nx-plugins/commit/94e0f3b46653278cc19a6ff24e1fdbdcd21122bf))
+
 ## [1.2.0](https://github.com/shepherd231/nx-plugins/compare/nx-templates-v1.1.1...nx-templates-v1.2.0) (2024-01-03)
 
 
